@@ -23,7 +23,7 @@ Before you begin, you need to know how to navigate to certain files using git.
         - Linux/Mac: `source env/bin/activate`
         - Windows: `env/Scripts/activate`
     Once the environment is active you should see (env) prepended to your prompt similar to below: `(env) $`
-    3. Install the Temporal SDK: `python -m pip install temporalio pytest pytest-asyncio`.
+    3. Install the Temporal SDK: `python -m pip install temporalio`.
 For every new terminal you open, you will need to activate the environment using the following command:
         - Linux/Mac: `source env/bin/activate`
         - Windows: `env/Scripts/activate`

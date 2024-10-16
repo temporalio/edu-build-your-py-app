@@ -8,7 +8,7 @@
 
 import asyncio
 
-from run_worker import SayHello
+from workflows import SayHello
 from temporalio.client import Client
 
 
