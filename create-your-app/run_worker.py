@@ -1,4 +1,8 @@
-# Workers are responsible for running your Temporal code. When you start a Workflow in Temporal, tasks get placed into a Task Queue. The Task Queue helps route tasks to the appropriate Worker, which executes the tasks. Workers continuously poll this queue for tasks and execute them. The Workflow doesn't proceed until a Worker picks up and processes the Workflow Task from the Task Queue.
+# Workers are responsible for running your Temporal code. When you start a Workflow in Temporal, tasks get placed into a Task Queue. 
+
+# The Task Queue helps route tasks to the appropriate Worker, which executes the tasks. 
+
+# Workers continuously poll this queue for tasks and execute them. The Workflow doesn't proceed until a Worker picks up and processes the Workflow Task from the Task Queue.
 
 import asyncio
 

@@ -26,7 +26,7 @@ Before you begin, you need to know how to navigate to certain files using git.
 ### Run a Workflow
 
 1. Now, you will run a Workflow. You will need to do this in a separate terminal window. To add more terminal windows in Gitpod, right click a terminal window and click `New Terminal`.
-2. To run the Workflow, run `python run_workflow.py`.
+2. To run the Workflow, run `python client.py`.
     - In the terminal window, you should see: `Hello, Temporal!`.
     - A Workflow is a sequence of steps defined by writing code, known as a Workflow Definition. These steps are executed as a Workflow Execution. A Workflow Definition is essentially a function, which can store state and orchestrates the execution of Activities. Workflows manage the coordination and logic of your application's processes, while Activities perform the tasks which interact with external services. As mentioned, the Workflow will orchestrate the sequence of Activities such as sending welcome emails, charging customers, and handling cancellations.
     - Activities are the building blocks of a Temporal Workflow. They encapsulate the logic for tasks that interact with external services such as querying a database or calling a third-party API. One of the key benefits of using Activities is their built-in fault tolerance. If an Activity fails, Temporal can automatically retry it until it succeeds or reaches a specified retry limit. This ensures that transient issues, like network glitches or temporary service outages, don't result in data loss or incomplete processes.
@@ -43,6 +43,6 @@ Now that you've run a basic `hello world` application, it's time for you to try 
     - Enter `ls` to see all the directories. You should see a `create-your-app` directory.
     - Enter the `create-your-app` directory by entering `cd create-your-app`.
 3. Start a Temporal Worker that will listen for any work that needs to be performed by running `python run_worker.py` in the same terminal window.
-5. Now open a new terminal window where you will run your workflow with `python run_workflow.py` once you've created your own workflow.
+5. Now open a new terminal window where you will run your workflow with `python client.py` once you've created your own workflow.
 
 Have fun building!
