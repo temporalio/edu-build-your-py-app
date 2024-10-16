@@ -13,14 +13,25 @@ Before you begin, you need to know how to navigate to certain files using git.
 
 ## Hello World Sample:
 
-### Setup
+### Setup: If you're using the Gitpod environment to run this exercise, you can skip these steps.
 
-1. We need to begin by installing the dependencies you need for this project. First, navigate into the `hello-world` subdirectory.
-2. **If you're using the Gitpod environment to run this exercise, you can skip this step.**: For the exercises, make sure to run `temporal server start-dev --ui-port 8080 --db-filename clusterdata.db` in one terminal window to start the Temporal server.  
+1. For the exercises, make sure to run `temporal server start-dev --ui-port 8080 --db-filename clusterdata.db` in one terminal window to start the Temporal server.  
+2. Add another terminal window in addition the one running the Temporal server. You can do this by right clicking a terminal window and click `New Terminal`. 
+3. All Python libraries for this course should be installed in a virtual environment. If you are running these exercises in the course's GitPod environment, there is a virtual environment already setup for you and you can skip this section. If you are running these exercises locally, be sure you are using Python 3.7+. 
+    1. Run the following command to create a virtual environment: `python3 -m venv env`.
+    2. Activate the virtual environment: 
+        - Linux/Mac: `source env/bin/activate`
+        - Windows: `env/Scripts/activate`
+    Once the environment is active you should see (env) prepended to your prompt similar to below: `(env) $`
+    3. Install the Temporal SDK: `python -m pip install temporalio pytest pytest-asyncio`.
+For every new terminal you open, you will need to activate the environment using the following command:
+        - Linux/Mac: `source env/bin/activate`
+        - Windows: `env/Scripts/activate`
 
-### Run a Worker
+### Run a Worker 
 
-1. Now, you will start a Temporal Worker. In a terminal window separate from running the server if you have one running, run `python run_worker.py` to start the Worker.
+1. Navigate into the `hello-world` directory.
+2. Now, you will start a Temporal Worker. In a terminal window separate from running the server if you have one running, run `python run_worker.py` to start the Worker.
     - Workers are responsible for running your Temporal code. When you start a Workflow in Temporal, tasks get placed into a Task Queue. The Task Queue helps route tasks to the appropriate Worker, which executes the tasks. Workers continuously poll this queue for tasks and execute them. The Workflow doesn't proceed until a Worker picks up and processes the Workflow Task from the Task Queue.
 
 ### Run a Workflow
