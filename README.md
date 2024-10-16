@@ -1,6 +1,14 @@
 # Build Your Own Temporal Application in Python!
 
-You are going to build your own Temporal application in Python! But first, as a prerequisite, let's run through a simple application that prints "Hello, Temporal!". Follow the steps below to run the _Hello World_ sample:
+You are going to build your own Temporal application in Python! But first, as a prerequisite, let's run through a simple application that prints "Hello, Temporal!". Follow the steps below to run the _Hello World_ sample.
+
+## Using the Exercise Environment
+
+We want to minimize the barriers for learning Temporal, and we know that not everyone is able or willing to install software on their computers for a training course. That's why we use the GitPod service to provide a browser-based exercise environment for you to use.
+
+The only thing you'll need besides an up-to-date Web browser is a GitHub account that you can log into from that browser, which allows the GitPod service to set up the exercise code you'll use during the course.
+
+Launch the exercise environment [here](https://gitpod.io/new/#https://github.com/temporalio/edu-build-your-py-app).
 
 ## How to Navigate to Your Files
 
